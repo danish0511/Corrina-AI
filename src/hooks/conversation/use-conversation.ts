@@ -160,14 +160,14 @@ export const useChatWindow = () => {
       //WIP: Remove this line
       if (message) {
         //remove this
-        // setChats((prev) => [...prev, message.message[0]])
+        setChats((prev) => [...prev, message.message[0]])
 
-        await onRealTimeChat(
-          chatRoom!,
-          message.message[0].message,
-          message.message[0].id,
-          'assistant'
-        )
+        // await onRealTimeChat(
+        //   chatRoom!,
+        //   message.message[0].message,
+        //   message.message[0].id,
+        //   'assistant'
+        // )
       }
     } catch (error) {
       console.log(error)
